@@ -1,0 +1,159 @@
+
+.Banner {
+    background-image: url('D:\Football\football\public\header (4).jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-box {
+    position: absolute;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgb(255, 255, 255); 
+    padding: 20px;
+    width: 440px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    opacity: 0;
+    margin-left: -100%;
+    transition: 2s ease;
+}
+
+.line-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 100px;
+}
+
+.line {
+    width: 100px;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+
+.text {
+    color: white;
+    text-align: left;
+    font-size: 16px;
+}
+
+.head {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.read-more {
+    position: relative;
+    height: 35px;
+    width: 120px;
+    background-color: rgb(12, 43, 70);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more::before, 
+.read-more::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.read-more::before {
+    top: -10px;
+    left: -10px;
+    transform: rotate(45deg);
+}
+
+.read-more::after {
+    bottom: -10px;
+    right: -10px;
+    transform: rotate(45deg);
+}
+
+.read-more:hover {
+    background-color: white;
+    color: rgb(12, 43, 70);
+}
+
+.read-more:hover::before {
+    transform: translate(10px, 10px) rotate(45deg);
+}
+
+.read-more:hover::after {
+    transform: translate(-10px, -10px) rotate(45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner-box {
+        width: 50%;
+        left: 10%;
+        right: 10%;
+        padding: 15px;
+    }
+
+    .line-text {
+        margin-right: 50px;
+    }
+
+    .head {
+        font-size: 32px;
+    }
+
+    .read-more {
+        width: 100px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-box {
+        width: 85%;
+        left: 5%;
+        height: 300px;
+        padding: 10px;
+    }
+    .Banner{
+        height: 400px;
+    }
+
+    .line-text {
+        margin-right: 20px;
+    }
+
+    .head {
+        font-size: 30px;
+    }
+
+    .read-more {
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+}

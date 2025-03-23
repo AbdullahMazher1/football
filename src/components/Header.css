@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+}
+.image-header{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+.cursor {
+    font-weight: bold;
+    color: white;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+.header-line{
+    margin-top: 0px;
+    width: 100px;
+    opacity: 0.4;
+}
+.header-right{
+    padding-top: 50px;
+    background-color: #1a2434;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.red{
+    margin-bottom: -20px;
+    color: red;
+    font-family: 'Barlow', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+.para-white{
+    margin-top: -20px;
+    color: rgb(210, 210, 210);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-right: 50px;
+}
+.head{
+    color: white;
+    line-height: 1.3;
+    font-size: 45px;
+}
+.header-up{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.header-bottom{
+    display: flex;
+    align-items: center;
+    place-content: center;
+    margin: 30px;
+}
+.header-bottom-inner{
+    width: 100%;
+    height: auto;
+    background-color: #121b2a;
+    border-radius: 10px;
+}
+.header-bottom-inner{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    justify-content: space-between;
+    color: white;
+    padding-left: 20px;
+}
+.header-logo{
+    height: 70px;
+    object-fit: contain;
+}
+.inner-left-next{
+    color: white;
+}
+.date{
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+}
+.inner-left-first{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.tickets-btn{
+    background-color: transparent;
+    border: none;
+    color: rgb(201, 201, 201);
+    cursor: pointer;
+    font-family: 'Barlow', Helvetica, Arial, sans-serif;
+    transition: 0.2s ease;
+}
+.tickets-btn:hover{
+    color: white;
+}
+.time{
+    color: red;
+    font-size: 12px;
+}
+.date-1{
+    color: #9b9b9b;
+    font-weight: 800;
+    font-size: 22px;
+}
+.header-inner-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+}
+.inner-right-up{
+    display: flex;
+    flex-direction: column;
+}
+.inner-right-bottom{
+    display: flex;
+    
+    flex-direction: column;
+}
+.inner-right-down{
+    margin-right: -40px;
+}

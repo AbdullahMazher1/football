@@ -1,0 +1,165 @@
+.book-demo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #1a2434;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 100px;
+}
+
+.book-span {
+    color: #E3B723;
+}
+
+.book-content {
+    max-width: 600px;
+    text-align: center;
+    z-index: 2;
+}
+
+.book-heading {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInScale 0.8s ease-out forwards 0.3s;
+}
+
+.book-button {
+    margin-top: 20px;
+    background-color: transparent;
+    color: white;
+    padding: 12px 60px;
+    border: 1px solid white;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+}
+
+.book-button:hover {
+    background-color: #E3B723;
+}
+
+.book-text {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards 0.5s;
+}
+
+.book-highlight {
+    font-weight: bold;
+    color: #E3B723;
+}
+
+/* Image Styles */
+.book-left-image,
+.book-right-image {
+    position: absolute;
+    bottom: 0;
+    width: 420px;
+    opacity: 0.9;
+}
+
+.book-left-image {
+    left: 100px;
+    filter: drop-shadow(0px 0px 20px rgba(23, 96, 50, 0.5));
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 0.8s ease-out forwards 0.3s;
+}
+
+.book-right-image {
+    right: -10px;
+    bottom: -40px;
+    width: 300px;
+    opacity: 0;
+    cursor: pointer;
+    transform: translateX(50px);
+    animation: slideInRight 0.8s ease-out forwards 0.3s;
+}
+
+/* Animations */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book-demo-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 15px;
+    }
+
+    .book-left-image,
+    .book-right-image {
+        position: static;
+        width: 120px;
+        margin-top: 20px;
+        opacity: 1;
+        mix-blend-mode: normal;
+    }
+
+    .book-heading {
+        font-size: 1.8rem;
+    }
+
+    .book-button {
+        font-size: 0.9rem;
+    }
+
+    .book-text {
+        font-size: 0.9rem;
+    }
+}
