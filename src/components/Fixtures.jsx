@@ -33,7 +33,7 @@ function Fixtures() {
                     >
                         <p className='red'>FIRST TEAM</p>
                         <p className='fixture-date'>THURSDAY 6th MAR</p>
-                        <img src='logo.png' className='fixture-logo' />
+                        <img alt='logo' src='logo.png' className='fixture-logo' />
                         <p className='fixture-text'>PARIS <span className='fixture-red'>VS</span> LIVERPOOL</p>
                         
                         <div className='fixture-small-grid'>

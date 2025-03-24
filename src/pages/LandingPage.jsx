@@ -1,11 +1,9 @@
 import React from 'react'
-import Header from '../components/Header';
 import Cards from '../components/Cards';
 import GridSection from '../components/GridSection';
 import Container from '../components/Container';
 import Fixtures from '../components/Fixtures'
 import Discover from '../components/Discover';
-import SlideShow from '../components/SlideShow';
 import Analytics from '../components/Analytics';
 import BookDemo from '../components/BookDemo'
 import Banner from '../components/Banner';
@@ -20,7 +18,7 @@ function LandingPage() {
             <Container />
             <Analytics/>
             <Fixtures />
-            <ProductCard/>
+            <ProductCard/>+
             <BookDemo/>
             <Discover />
         </div>

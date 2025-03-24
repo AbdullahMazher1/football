@@ -8,7 +8,7 @@ function Footer() {
         {/* Investors Section */}
       <div className="investors-container">
         <div className="investors-logos">
-          <img src="investors.png" className="investors-im"/>
+          <img alt="logo" src="investors.png" className="investors-im"/>
         </div>
       </div>
        {/* Red Separator Line */}
