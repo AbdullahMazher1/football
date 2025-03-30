@@ -18,7 +18,7 @@ function LandingPage() {
             <Container />
             <Analytics/>
             <Fixtures />
-            <ProductCard/>+
+            <ProductCard/>
             <BookDemo/>
             <Discover />
         </div>

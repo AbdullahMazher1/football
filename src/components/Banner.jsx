@@ -37,7 +37,7 @@ function Banner() {
                     <p className='text'>TRUST AND RECOMMEND</p>
                 </div>
                 <h1 className='head'>
-                Paris-Liverpool: A classic match|
+                The market is opening up for business arena.
                 </h1>
                 <button className='read-more'>Read More</button>
             </div>

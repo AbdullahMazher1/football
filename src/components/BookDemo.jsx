@@ -15,7 +15,7 @@ const BookDemo = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <motion.img
-        src='footballer.png'
+        src='/footballer.png'
         alt="Tools"
         className="book-left-image"
         initial={{ opacity: 0, x: -50 }}
@@ -29,7 +29,7 @@ const BookDemo = () => {
         transition={{ duration: 0.8, delay: 0.4 }}
       >
         <h2 className="book-heading">
-          Take the <span className="book-span">first step</span> <br /> to better health
+          Take the <span className="book-span">first step</span> <br /> to better sports
         </h2>
         <button className="book-button">Book A Demo Now</button>
         <p className="book-text">
@@ -37,7 +37,7 @@ const BookDemo = () => {
         </p>
       </motion.div>
       <motion.img
-        src='football.png'
+        src='/football.png'
         alt="Doctor"
         className="book-right-image"
         initial={{ opacity: 0, x: 50 }}

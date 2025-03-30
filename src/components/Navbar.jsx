@@ -48,9 +48,9 @@ function Navbar() {
                 </div>
                 <div className='navbar-center'>
                     <div className='navbar-bottom-links'>
-                        <Dropdown title="FIRST TEAM" basePath="/first-team" subLinks={["News", "Effective", "Calender Result", "Ranking"]} />
+                        <Dropdown title="FIRST TEAM" basePath="/first-team" subLinks={["News", "News1", "News2", "News3"]} />
                         <Dropdown title="MEDIA" basePath="/media" subLinks={["OFCK", "Gallery"]} />
-                        <Dropdown title="THE CLUB" basePath="/the-club" subLinks={["Presicency","History", "Parteners", "Vision", "Academy OFCK"]} />
+                        <Dropdown title="THE CLUB" basePath="/the-club" subLinks={["Presidency","History", "Parteners", "Vision", "Academy OFCK"]} />
                         <Dropdown title="FANS" basePath="/fans" subLinks={["Fan Club", "Events", "Support"]} />
                         <Dropdown title="BOUTIQUE" basePath="/boutique" subLinks={["Products", "Whistlist", "Cart"]} />
                     </div>
